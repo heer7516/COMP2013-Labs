@@ -33,7 +33,6 @@ interface Listing {
   };
 }
 
-
 const listings: Listing[] = [
   {
     id: "10100",
@@ -512,6 +511,7 @@ const listings: Listing[] = [
  * from the array above
  */
 //WRITE YOUR CODE BELOW
+const listing0: Listing = listings[0];
 
 /**
  * Task-3:
