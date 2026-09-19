@@ -550,6 +550,12 @@ const listing0Updated: Listing = {
  * AND CHECK parseInt() to help changing quantifiable strings to numbers
  */
 //WRITE YOUR CODE BELOW
+function realtorFees(listing: Listing): number {
+  return parseInt(listing.price) > 450000
+    ? parseInt(listing.price) * 0.02
+    : parseInt(listing.price) * 0.025;
+}
+
 
 /**
  * Task-5:
