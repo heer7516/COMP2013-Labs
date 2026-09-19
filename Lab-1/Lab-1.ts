@@ -31,6 +31,8 @@ interface Listing {
     water: string;
     size: string;
   };
+  isSold?: boolean;
+currentOwner?: string;
 }
 
 const listings: Listing[] = [
@@ -525,6 +527,12 @@ const listing0: Listing = listings[0];
  * Make sure to add them as OPTIONAL properties
  */
 //WRITE YOUR CODE BELOW
+
+const listing0Updated: Listing = {
+  ...listing0,
+  isSold: false,
+  currentOwner: "Jane Doe"
+};
 
 /**
  * NOTE: THIS TASK IS TRICKY!
