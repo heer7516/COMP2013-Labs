@@ -1,11 +1,12 @@
 import "./App.css";
-import Container from "./components/Container";
+import ResortContainer from "./components/ResortContainer";
+import listings from "./data/data";
 
 function App() {
   return (
     <>
       <h1>Resorts Lite</h1>
-      <Container />
+      <ResortContainer listings={listings} />
     </>
   );
 }
